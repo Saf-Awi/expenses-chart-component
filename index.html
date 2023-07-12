@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main id="main">
+    <header>
+      <div class="balance">
+        <h5 class="my-balance">My balance</h5>
+        <h1 class="balance-numb">$921.48</h1>
+      </div>
+      <div class="circle-logo">
+        <svg class="rotate-on-hover" width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
+      </div>
+    </header>
+
+    <div class="main-card">
+      <h2 class="spending-header">Spending - Last 7 days</h2>
+      
+      <div class="bar-chart">
+        <div class="bar" id="mon"></div>
+        <div class="bar" id="tue"></div>
+        <div class="bar highest" id="wed"></div>
+        <div class="bar" id="thu"></div>
+        <div class="bar" id="fri"></div>
+        <div class="bar" id="sat"></div>
+        <div class="bar" id="sun"></div>
+      </div>
+
+      <div class="days">
+        <div class="day mon">mon</div>
+        <div class="day tue">tue</div>
+        <div class="day wed">wed</div>
+        <div class="day thu">thu</div>
+        <div class="day fri">fri</div>
+        <div class="day sat">sat</div>
+        <div class="day sun">sun</div>
+      </div>
+      <hr>
+      <div class="total">
+        <div class="total-left">
+          <h5 class="total-this-month">Total this month</h5>
+          <h1 class="month-total">$478.33</h1>
+        </div>
+        <div class="total-right">
+          <h5 class="percentage">+2.4%</h5>
+          <h5 class="total-last-month">from last month</h5>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Safa Al-Hilo</a>.
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

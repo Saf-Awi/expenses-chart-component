@@ -1,0 +1,155 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+    --primary-soft-red:  hsl(10, 79%, 65%);
+    --primary-cyan: hsl(186, 34%, 60%);
+    --neutral-dark-brown: hsl(25, 47%, 15%);
+    --neutral-medium-brown: hsl(28, 10%, 53%);
+    --neutral-cream: hsl(27, 66%, 92%);
+    --neutral-very-pale-orange: hsl(33, 100%, 98%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--neutral-cream);
+    
+
+}
+
+header {
+    background-color: var(--primary-soft-red);
+    display: flex;
+    color: var(--neutral-very-pale-orange);
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 0 30px;
+    width: 500px;
+    
+    
+}
+
+.my-balance {
+    font-weight: 400;
+    position: relative;
+    top: 20px;
+}
+
+.circle-logo {
+    position: relative;
+    top: 55px;
+}
+
+.rotate-on-hover {
+    transition: transform 0.8s ease-in-out;
+    
+  }
+
+.rotate-on-hover:hover {
+    transform: rotate(360deg);
+  }
+
+.main-card {
+    background-color: var(--neutral-very-pale-orange);
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+.spending-header {
+    color: var(--neutral-dark-brown);
+
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.bar {
+    background-color: var(--primary-soft-red);
+    border-radius: 10px;
+    width: 50px;
+    transition: height 1s ease-in-out;
+    
+}
+
+.bar:hover {
+    background-color: hsla(10, 79%, 65%, 0.442);
+    cursor: pointer;
+}
+
+.days {
+    color: var(--neutral-medium-brown);
+    display: flex;
+    gap: 48px;
+    position: relative;
+    left: 3px;
+    text-align: center; 
+ 
+}
+
+.thu {
+    position: relative;
+    right: 10px;
+}
+
+
+
+.highest {
+    background-color: var(--primary-cyan);
+}
+
+.highest:hover {
+    background-color: hsl(186, 34%, 60%, 0.442);
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-this-month, .total-last-month {
+    color: var(--neutral-medium-brown);
+}
+
+.month-total, .percentage {
+    color: var(--neutral-dark-brown);
+}
+
+.month-total {
+    position: relative;
+    bottom: 15px;
+}
+
+.percentage {
+    position: relative;
+    top: 20px;
+    left: 70px;
+}
+hr {
+    border: 0.5px solid var(--neutral-medium-brown);
+    width: 500px;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: var(--neutral-dark-brown);
+    color: var(--neutral-very-pale-orange);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1;
+  }
+  
+  
